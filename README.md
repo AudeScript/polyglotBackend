@@ -36,14 +36,23 @@ PolyglotConnect is a culturally inspired language learning platform designed to 
 ## 📁 Project Structure
 
 src/
+
 ├── auth/ # Authentication (JWT, Guards, Strategies)
+
 ├── users/ # User module
+
 ├── languages/ # Languages and dialects
+
 ├── lessons/ # Lessons, media files, content
+
 ├── bookings/ # Bookings and scheduling
+
 ├── common/ # Shared utilities (guards, interceptors, etc.)
+
 ├── prisma/ # Prisma service and hooks
+
 ├── main.ts # App entry point
+
 └── app.module.ts # Root module
 
 ---
@@ -55,36 +64,37 @@ src/
 
 git clone https://github.com/polyglotconnect/backend.git
 cd backend
-2. Install Dependencies
 
+### 2. Install Dependencies
 npm install
-3. Environment Setup
+
+### 3. Environment Setup
 Create a .env file in the root directory and add the following environment variables:
 
-# Database
+#### Database
 DATABASE_URL=postgresql://youruser:yourpassword@localhost:5432/polyglotconnect
 
-# JWT
+#### JWT
 JWT_SECRET=your_jwt_secret
 JWT_EXPIRES_IN=3600s
 
-# Prisma
+#### Prisma
 SHADOW_DATABASE_URL=postgresql://youruser:yourpassword@localhost:5432/polyglotconnect_shadow
 
-# App
+#### App
 PORT=3000
 
-4. Prisma Setup
+### 4. Prisma Setup
 Generate the Prisma client:
 npx prisma generate
 
 Run database migrations:
 npx prisma migrate dev --name init
 
-5. Start Development Server
+### 5. Start Development Server
 npm run start:dev
 Your backend server will run at:
-👉 http://localhost:3000
+👉 http://your_server_ip:3000
 
 
 🧪 Running Tests
@@ -93,14 +103,14 @@ npm run test:e2e      # End-to-end tests
 npm run test:watch    # Watch mode
 
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
 
-🙌 Acknowledgments
+### 🙌 Acknowledgments
 PolyglotConnect is inspired by the need to preserve and promote African linguistic diversity through digital innovation. Special thanks to all contributors and cultural consultants.
 
-🙋 Contributions
+### 🙋 Contributions
 We are currently not accepting external contributions while the project is under active development. Thank you for your interest and understanding.
 
-💬 Stay Connected
+### 💬 Stay Connected
 For updates or partnership opportunities, feel free to reach out via our official contact channels.
